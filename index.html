@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureKey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" >
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <img src="images/logo.png" style="width: 80px;height: 80px;">
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Generate a <br><span>Random Password</span></h1>
+        
+        <!-- Range input for password length -->
+        <div class="range-container">
+            <label for="lengthRange">Password Length: <span id="lengthValue">12</span></label>
+            <input type="range" id="lengthRange" min="4" max="20" value="12">
+        </div>
+        
+        <div class="display">
+            <input type="text" id="password" placeholder="Password">
+            <img src="images/copy.png" alt="Copy password icon" onclick="copyPassword()">
+        </div>
+        
+        <button onclick="createPassword()" class="btn">
+            <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" class="sparkle">
+                <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"></path>
+            </svg>
+            <span class="text">Generate</span>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
